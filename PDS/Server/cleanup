@@ -1,0 +1,2 @@
+pds-cli hiera delete nodes/pe-instance-davidsand-0-cffe02.tq2kpafq5bsehkpub4ur5a35ya.xx.internal.cloudapp.net motd::content
+pds-cli node delete pe-instance-davidsand-0-cffe02.tq2kpafq5bsehkpub4ur5a35ya.xx.internal.cloudapp.net

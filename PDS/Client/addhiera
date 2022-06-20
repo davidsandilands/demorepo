@@ -1,0 +1,2 @@
+puppet agent -t
+cat /etc/motd

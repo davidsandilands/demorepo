@@ -1,0 +1,3 @@
+pds-cli node upsert pe-instance-davidsand-0-cffe02.tq2kpafq5bsehkpub4ur5a35ya.xx.internal.cloudapp.net -c motd -d  '{"status": "Testing"}' -e production
+curl -X GET http://localhost:8080/pdb/query/v4/facts/trusted --data-urlencode 'query=["=", "certname", "pe-instance-davidsand-0-cffe02.tq2kpafq5bsehkpub4ur5a35ya.xx.internal.cloudapp.net"]'|jq
+pds-cli hiera upsert nodes/pe-instance-davidsand-0-cffe02.tq2kpafq5bsehkpub4ur5a35ya.xx.internal.cloudapp.net motd::content -v '"Hello world, I am a %{trusted.external.pds.data.status} Server\n"'

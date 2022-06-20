@@ -1,0 +1,4 @@
+jq '.resources[] | select(.type=="Class") | .title' /opt/puppetlabs/puppet/cache/client_data/catalog/pe-instance-davidsand-0-cffe02.tq2kpafq5bsehkpub4ur5a35ya.xx.internal.cloudapp.net.json
+puppet agent -t
+jq '.resources[] | select(.type=="Class") | .title' /opt/puppetlabs/puppet/cache/client_data/catalog/pe-instance-davidsand-0-cffe02.tq2kpafq5bsehkpub4ur5a35ya.xx.internal.cloudapp.net.json
+cat /etc/motd

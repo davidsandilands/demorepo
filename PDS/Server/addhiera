@@ -1,0 +1,1 @@
+pds-cli hiera upsert nodes/pe-instance-davidsand-0-cffe02.tq2kpafq5bsehkpub4ur5a35ya.xx.internal.cloudapp.net motd::content -v '"Hello world\n"'
